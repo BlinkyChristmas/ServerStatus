@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ServerStatus">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="utility">
+      <UniqueIdentifier>{23fbec62-598f-4e82-ba0c-8c9af79cf0d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerStatus\ClientList">
+      <UniqueIdentifier>{f23875d9-e668-4f80-9370-badfa1bb75df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerStatus\ConnectionLog">
+      <UniqueIdentifier>{2e4d3926-e2f9-44e9-be0f-835c8e0767eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerStatus\ErrorLog">
+      <UniqueIdentifier>{06b7b836-9bcc-41cb-8a49-02725702832d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerStatus\ServerLog">
+      <UniqueIdentifier>{1c9a623f-0450-46f3-b404-66bdca62d3a7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="utility\BaseConfiguration.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\buffer.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\mapfile.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\timeutil.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerStatus\FormatData.cpp">
+      <Filter>ServerStatus</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerStatus\main.cpp">
+      <Filter>ServerStatus</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerStatus\ProcessData.cpp">
+      <Filter>ServerStatus</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerStatus\ClientList\ClientList.cpp">
+      <Filter>ServerStatus\ClientList</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerStatus\ClientList\ClientName.cpp">
+      <Filter>ServerStatus\ClientList</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerStatus\ConnectionLog\ConnectionEntry.cpp">
+      <Filter>ServerStatus\ConnectionLog</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerStatus\ConnectionLog\ConnectionLog.cpp">
+      <Filter>ServerStatus\ConnectionLog</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerStatus\ErrorLog\ErrorEntry.cpp">
+      <Filter>ServerStatus\ErrorLog</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerStatus\ErrorLog\ErrorLog.cpp">
+      <Filter>ServerStatus\ErrorLog</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerStatus\ServerLog\ServerEntry.cpp">
+      <Filter>ServerStatus\ServerLog</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerStatus\ServerLog\ServerLog.cpp">
+      <Filter>ServerStatus\ServerLog</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="utility\BaseConfiguration.hpp">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\buffer.hpp">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\dbgutil.hpp">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\mapfile.hpp">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\strutil.hpp">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\timeutil.hpp">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerStatus\FormatData.hpp">
+      <Filter>ServerStatus</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerStatus\ProcessData.hpp">
+      <Filter>ServerStatus</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerStatus\ClientList\ClientList.hpp">
+      <Filter>ServerStatus\ClientList</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerStatus\ClientList\ClientName.hpp">
+      <Filter>ServerStatus\ClientList</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerStatus\ConnectionLog\ConnectionEntry.hpp">
+      <Filter>ServerStatus\ConnectionLog</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerStatus\ConnectionLog\ConnectionLog.hpp">
+      <Filter>ServerStatus\ConnectionLog</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerStatus\ErrorLog\ErrorEntry.hpp">
+      <Filter>ServerStatus\ErrorLog</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerStatus\ErrorLog\ErrorLog.hpp">
+      <Filter>ServerStatus\ErrorLog</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerStatus\ServerLog\ServerEntry.hpp">
+      <Filter>ServerStatus\ServerLog</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerStatus\ServerLog\ServerLog.hpp">
+      <Filter>ServerStatus\ServerLog</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
