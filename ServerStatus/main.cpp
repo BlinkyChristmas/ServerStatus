@@ -51,6 +51,8 @@ int main(int argc, const char * argv[]) {
             auto three = connectionLog.refresh();
             auto four = errorLog.refresh();
             if (one || two || three || four) {
+                // we should copy two, three and our
+                
                 auto clients = processData(clientList, connectionLog, errorLog);
                 
                 formatData(output_path, serverLog.lastState(), clients) ;
