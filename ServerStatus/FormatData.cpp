@@ -58,7 +58,8 @@ auto formatData(const std::filesystem::path &path,const ServerEntry &serverState
         output << "\t\t\t<th style=\"text-align:center;background-color:#A0A0A0;width:190px\" scope=\"col\">Client/Status</th>\n";
         output << "\t\t\t<th style=\"text-align:center;background-color:#A0A0A0;width:185px\" scope=\"col\">Timestamp</th>\n";
         output << "\t\t\t<th style=\"text-align:center;background-color:#A0A0A0;width:40px\" scope=\"col\">Error</th>\n";
-         output << "\t\t\t</tr>\n";
+        output << "\t\t\t<th style=\"text-align:center;background-color:#A0A0A0;width:185px\" scope=\"col\">IP Address</th>\n";
+        output << "\t\t\t</tr>\n";
         output << "\t\t</thead>\n";
         output << "\t\t<tbody>\n";
         
@@ -68,6 +69,9 @@ auto formatData(const std::filesystem::path &path,const ServerEntry &serverState
             auto conn_color = (entry.hasBeenSeen()?connected_color:ClientEntry::neverConnected);
             output << "\t\t\t\t<td style=\"background-color:" << conn_color <<";\">" << entry.name << "</td>\n";
             output << "\t\t\t\t<td style=\"background-color:" << conn_color << ";\">" << entry.time << "</td>\n";
+            output << "\t\t\t\t<td " << (entry.hasError ? ("style=\"background-color:"s + clientError + ";\">") : ("style=\"background-color:"s + disconnectedColor + ";\">"s)) << (entry.hasError ? "Error" : "") << "</td>\n";
+            output << "\t\t\t\t<td style=\"background-color:" << conn_color << ";\">" << entry.ip << "</td>\n";
+
         }
         output << "\t\t</tbody>\n";
         output << "\t</table>\n";
