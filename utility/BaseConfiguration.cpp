@@ -12,7 +12,7 @@ auto BaseConfiguration::hasBeenUpdated(const std::filesystem::path &path) const 
     if (!std::filesystem::exists(path)) { return false; }
     auto lastwrite = std::filesystem::last_write_time(path) ;
     
-    if ( std::chrono::duration_cast<std::chrono::seconds>(lastwrite - lastRead).count() > 0 ){
+    if ( std::chrono::duration_cast<std::chrono::microseconds>(lastwrite - lastRead).count() > 0 ){
         return true ;
     }
     return false ;
@@ -43,7 +43,7 @@ auto BaseConfiguration::load(const std::filesystem::path &path) -> bool {
     if (!std::filesystem::exists(path)) {
         return false ;
     }
-    lastRead = std::filesystem::last_write_time(path)  ; // this is here, even if we cant open it, so we dont continue to retry on refresh
+    lastRead = std::filesystem::last_write_time(path); // this is here, even if we cant open it, so we dont continue to retry on refresh
     auto input = std::ifstream(path.string());
     if (!input.is_open()) {
         return false ;
